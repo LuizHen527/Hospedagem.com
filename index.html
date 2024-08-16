@@ -1,27 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospedagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <img  src="./assets/assets/logo-branca.png" alt="Logo do site escrito Hospedagens.com">
-        <nav>
+        <img id="header-logo" src="./assets/logo-branca.png" alt="Logo do site escrito Hospedagens.com">
+        <nav class="header-nav">
+            <link>
             <p>Hoteis</p>
+            </link>
+            <link>
             <p>Contato</p>
+            </link>
+            <link>
             <p>Entrar</p>
-            <p>Cadastre-se</p>
+            </link>
+            <div class="header-link-div">
+                <link>
+                <p>Cadastre-se</p>
+                </link>
+            </div>
         </nav>
     </header>
     <main>
-        <div>
-            <h2>As melhores hospedagens do Brasil</h2>
-            <p>mais de 500 mil resevas esperando por voce! Basta procurar pelo local ideal, e realizar a viagem dos seus sonhos</p>
-            <img src="./assets/assets/mapa-brasil.png" alt="Mapa do brasil com nomes em cada regiao">
+        <!-- banner -->
+        <div class="banner-container">
+            <div class="banner-text-container">
+                <h2>As melhores hospedagens do Brasil</h2>
+                <p>mais de 500 mil resevas esperando por voce! Basta procurar pelo local ideal, e realizar a viagem dos
+                    seus sonhos</p>
+            </div>
+            <img class="banner-image" src="./assets/mapa-brasil.png" alt="Mapa do brasil com nomes em cada regiao">
         </div>
+
+        <!-- search bar -->
+        <div class="banner-bar">
+            <form class="banner-bar-form" action="">
+
+                <div class="banner-bar-form-input">
+                    <img src="./assets/icons/local-icon.svg" alt="icone de destino">
+                    <div class="banner-bar-form-input-label">
+                        <label for="place">Qual o local desejado?</label>
+                        <input id="place" type="text">
+                    </div>
+                </div>
+
+                <div class="banner-bar-form-input">
+                    <img src="./assets/icons/checkin-icon.svg" alt="icone de calendario">
+                    <div class="banner-bar-form-input-label">
+                        <label for="checkin">Data check-in</label>
+                        <input id="checkin" type="date">
+                    </div>
+                </div>
+
+                <div class="banner-bar-form-input">
+                    <img src="./assets/icons/checkout-icon.svg" alt="icone de calendario">
+                    <div class="banner-bar-form-input-label">
+                        <label for="checkin">Data check-out</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <input type="submit" value="Procurar hotel">
+            </form>
+        </div>
+
+        <!-- search results -->
+        <section>
+            <div class="results-card">
+                <img src="./assets/angra.jpg" alt="foto de angra dos reis">
+                <div class="results-card-title">
+                    <h3>Angra dos reis</h3>
+                    <h3 class="results-card-title-state">RJ</h3>
+                </div>
+                <p>Desfrute de um paraiso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.</p>
+            </div>
+
+            <div class="results-card">
+                <img src="./assets/arraial-do-cabo.jpg" alt="foto de angra dos reis">
+                <div class="results-card-title">
+                    <h3>Arraial do cabo</h3>
+                    <h3 class="results-card-title-state">RJ</h3>
+                </div>
+                <p>Conecte-se com a natureza em Arraial do Cabo! Nossa pousada esta localizada proximo as praias.</p>
+            </div>
+
+            <div class="results-card">
+                <img src="./assets/treze-tilias.jpg" alt="foto de angra dos reis">
+                <div class="results-card-title">
+                    <h3>Treze Tilias</h3>
+                    <h3 class="results-card-title-state">RJ</h3>
+                </div>
+                <p>Viva a experiencia de um vilarejo europeu no Brasil! Nossa pousada em Treze Tulias e perfeita.</p>
+            </div>
+
+            <div class="results-card">
+                <img src="./assets/angra.jpg" alt="foto de angra dos reis">
+                <div class="results-card-title">
+                    <h3>Ipanema</h3>
+                    <h3 class="results-card-title-state">RJ</h3>
+                </div>
+                <p>Explore a rica cultura e historia de Ipanema! Nossa pousada e o ponto de partida ideal para conhecer.</p>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
