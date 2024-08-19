@@ -33,6 +33,7 @@ header {
     padding-right: 72px;
     align-items: center;
     background-image: linear-gradient(to right, #1E52B4 , #002777);
+    gap: 50px;
 }
 
 #header-logo {
@@ -47,14 +48,14 @@ header {
     flex-direction: row;
     gap: 30px;
     align-items: center;
-    width: 30%;
+ 
 }
 
 .header-link-div {
-    padding-top: 6.5px;
+    padding-top: 0.406rem;
     text-align: center;
     height: 35px;
-    width: 151px;
+    width: 9.438rem;
     border: 1px solid white;
     border-radius: 8px;
 }
@@ -105,7 +106,7 @@ header {
 
 .banner-bar {
     position: relative;
-    top: -45px;
+    top: -2.813em;
     left: 17%;
     display: flex;
     height: 80px;
@@ -264,9 +265,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    background-image: linear-gradient(to right, #009C3B, #009538);
-    height: 163px;
     gap: 20px;
 }
 
@@ -275,6 +273,15 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.footer-green-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #009C3B, #009538);
+    height: 163px;
+    width: 100%;
 }
 
 .footer-title {
@@ -288,4 +295,89 @@ footer {
     width: 100%;
     height: 50px;
     background-color: #FFDF00;
+}
+
+.footer-bubbles-container {
+    height: 100%;
+    width: 320px;
+}
+
+.footer-bubbles-circle1 {
+    position: relative;
+    left: 228px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-circle2 {
+    position: relative;
+    left: 116px;
+    bottom: -20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-circle3 {
+    position: relative;
+    left: 137px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-circle4 {
+    position: relative;
+    bottom: 106px;
+    right: 48px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.2);
+}
+
+.footer-bubbles-left-circle1 {
+    position: relative;
+    left: 0px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-left-circle2 {
+    position: relative;
+    left: 149px;
+    bottom: -20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-left-circle3 {
+    position: relative;
+    left: 137px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.3);
+}
+
+.footer-bubbles-left-circle4 {
+    position: relative;
+    bottom: 106px;
+    right: -273px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250, 0.2);
+}
+
+@media (max-width: 1024px) {
+    
 }
