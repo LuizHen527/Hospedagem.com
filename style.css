@@ -19,7 +19,9 @@
     src: url(./assets/fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 
+
 /* header */
+
 
 header {
     display: flex;
@@ -57,7 +59,9 @@ header {
     border-radius: 8px;
 }
 
+
 /* banner */
+
 
 .banner-container {
     width: 100%;
@@ -95,7 +99,9 @@ header {
 
 }
 
+
 /* search bar */
+
 
 .banner-bar {
     position: relative;
@@ -145,13 +151,22 @@ header {
     gap: 14px;
 }
 
+
 /* search results */
 
+
 section {
+    background-color: #FCFCFC;
     display: flex;
+    flex-direction: column;
     gap: 32px;
     padding-left: 72px;
     padding-right: 72px;
+}
+
+.results-line {
+    display: flex;
+    justify-content: space-between;
 }
 
 section h3 {
@@ -185,4 +200,92 @@ section img {
     font-family: Oswald;
     font-weight: 600;
     color: #FFDF00;
+}
+
+
+/* bottom banner */
+
+
+article {
+    width: 100%;
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCFCFC;
+    align-items: center;
+    padding-top: 42px;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    gap: 31px;
+    padding-bottom: 41px;
+}
+
+article h4 {
+    font-family: LatoBold;
+    font-weight: 800;
+    font-size: 28px;
+    color: #2E2636;
+}
+
+article p {
+    font-family: LatoRegular;
+}
+
+.green-text {
+    color: #019438;
+}
+
+.yellow-text {
+    color: #FFDF00;
+}
+
+.blue-text {
+    color: #002777;
+}
+
+
+/* footer */
+
+
+footer {
+    flex-direction: column;
+    color: #FAFAFA;
+    font-family: LatoRegular;
+    font-size: 16px;
+}
+
+.footer-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(to right, #009C3B, #009538);
+    height: 163px;
+    gap: 20px;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-title {
+    font-size: 24px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #FFDF00;
 }
